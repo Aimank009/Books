@@ -44,7 +44,7 @@ const GetBooks = () => {
   {currentBooks.map((book, index) => (
     <div key={index} className="border p-4 rounded-lg shadow-md relative">
       <h3 className="text-lg font-semibold">{book.title}</h3>
-      <p className="text-gray-600">{book.author}</p>
+      <p className="text-gray-600">{book.authors}</p>
       <img src={book.thumbnail} alt="" />
       <p className="text-gray-600 text-sm">ISBN: {book.isbn13}</p>
     </div>
