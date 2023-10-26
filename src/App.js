@@ -6,15 +6,18 @@ import GetBookById from './components/GetBookById';
 import AddBook from './components/AddBook';
 import DeleteBook from './components/DeleteBook';
 import EditBook from './components/EditBook';
+import {Routes,Route} from 'react-router-dom'
 function App() {
   return (
-    <div className="text-xl">
-      <Home/>
-      {/* <GetBooks/> */}
-      {/* <GetBookById/> */}
-      {/* <AddBook/> */}
-      {/* <DeleteBook/> */}
-      {/* <EditBook/> */}
+    <div className="">
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/books' element={<GetBooks/>} />
+        <Route path='/getbook' element={<GetBookById/>}/>
+        <Route path='/addBook' element={<AddBook/>}/>
+        <Route path='/deletebook'element={<DeleteBook/>}/>
+        <Route path='/editbook' element={<EditBook/>} />
+      </Routes>
     </div>
   );
 }
